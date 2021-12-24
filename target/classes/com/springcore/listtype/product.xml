@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- This is Product Details -->
+
+	<bean name="details"
+		class="com.springcore.listtype.ProductDetails" p:name="Vehical">
+		<property name="wheel">
+			<list>
+				<value>4</value>
+				<value>6</value>
+				<value>10</value>
+			</list>
+		</property>
+
+		<property name="type">
+			<set>
+				<value>Car</value>
+				<value>Bus</value>
+				<value>Comercial</value>
+			</set>
+		</property>
+
+		<property name="validity">
+			<map>
+				<entry key="Car" value="15 years" />
+				<entry key="Bus" value="10 years" />
+				<entry key="Comercial">
+					<value>10 years</value>
+				</entry>
+			</map>
+		</property>
+
+
+	</bean>
+
+
+</beans>

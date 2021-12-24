@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean  name="emp"  class="com.springcore.collection.Employee">
+
+		<property name="name" value="Talib" />
+
+		<property name="phone">
+			<list>
+				<value>9947327994</value>
+				<value>1234587654</value>
+				<value>0987654332</value>
+				</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Delhi</value>
+				<value>Noida</value>
+				<value>U P</value>
+				<value>Hapur </value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="Jave" value="Two Mohths" />
+				<entry key="Python" value="One Mohths" />
+			</map>
+		</property>
+
+
+
+	</bean>
+
+
+</beans>
